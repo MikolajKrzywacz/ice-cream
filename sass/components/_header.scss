@@ -363,6 +363,10 @@ h1 {
     bottom: 0;
     right: 0;
   }
+
+  nav .mobile-menu__button{
+    width: 130px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
