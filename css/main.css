@@ -226,7 +226,17 @@ h1 {
 }
 
 @media screen and (max-width: 479px) {
+  .header__counter-container {
+    display: none;
+    visibility: 0;
+    pointer-events: none;
+  }
   .header__tablet-desktop-icons {
+    display: none;
+    visibility: 0;
+    pointer-events: none;
+  }
+  nav .mobile-menu__button {
     display: none;
     visibility: 0;
     pointer-events: none;
@@ -245,6 +255,7 @@ h1 {
     flex-direction: column;
     padding-right: 34px;
     margin-bottom: 14px;
+    margin-top: 20px;
   }
   .header__counter-container > svg {
     position: absolute;
