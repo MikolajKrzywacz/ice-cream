@@ -344,6 +344,16 @@ h1 {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .header {
+    &__desktop-menu {
+      display: none;
+      pointer-events: none;
+      visibility: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header {
     &__burger {
@@ -378,13 +388,13 @@ h1 {
       align-items: center;
       cursor: pointer;
 
-      &> a{
+      & > a {
         text-decoration: none;
         color: #ffffff;
-        
+
         &:hover {
           color: #d41443;
-      }
+        }
       }
     }
   }
