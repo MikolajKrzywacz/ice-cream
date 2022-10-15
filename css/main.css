@@ -39,6 +39,7 @@ h1 {
 
 /*/common/*/
 .header {
+  position: relative;
   height: 502px;
   background-color: var(--main-pink);
   display: flex;
@@ -324,7 +325,7 @@ h1 {
     z-index: 4;
     position: absolute;
     width: 168px;
-    height: 133px;
+    height: auto;
     bottom: 0;
     right: 34px;
   }
@@ -414,6 +415,47 @@ h1 {
   }
   h1 {
     font-size: 38px;
+    position: absolute;
+    top: -90px;
+    left: 80px;
+  }
+  .header__banner-buttons {
+    position: absolute;
+    top: 65px;
+    left: 80px;
+  }
+  .header__banner-button1 {
+    width: 104px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .header__banner-button2 {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .header__circle-button {
+    bottom: -65px;
+    width: 26px;
+    height: 26px;
+  }
+  picture img#pic3 {
+    z-index: 4;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    bottom: 28px;
+    left: 64px;
+  }
+  figcaption {
+    bottom: 90px;
+    left: 200px;
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
+  }
+  picture img#pic4 {
+    width: 200px;
   }
 }
 .container {
