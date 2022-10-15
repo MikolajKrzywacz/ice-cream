@@ -240,12 +240,20 @@ h1 {
     margin-right: 30px;
   }
   .header__counter-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-right: 34px;
     margin-bottom: 14px;
   }
+  .header__counter-container > svg {
+    position: absolute;
+    fill: #ffffff;
+    right: 20px;
+    top: -10px;
+  }
   .header__counter {
+    z-index: 2;
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;

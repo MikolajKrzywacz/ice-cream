@@ -231,13 +231,22 @@ h1 {
     }
 
     &__counter-container {
+      position: relative;
       display: flex;
       flex-direction: column;
       padding-right: 34px;
       margin-bottom: 14px;
+
+      & > svg{
+        position: absolute;
+        fill: #ffffff;
+        right: 20px;
+        top: -10px;
+      }
     }
 
     &__counter {
+      z-index: 2;
       font-family: "Titan One";
       font-style: normal;
       font-weight: 400;
