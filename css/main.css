@@ -378,6 +378,12 @@ h1 {
   .header__nav-mobile {
     align-items: center;
   }
+  .header__banner-button1:hover {
+    background-color: #c7133e;
+  }
+  .header__banner-button2:hover {
+    background-color: #ecebeb;
+  }
   .menu__list {
     list-style: none;
     display: flex;
@@ -399,6 +405,9 @@ h1 {
   }
   .menu__item > a:hover {
     color: #d41443;
+  }
+  nav .mobile-menu__button:hover {
+    background: #ecebeb;
   }
 }
 .container {

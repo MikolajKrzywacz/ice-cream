@@ -390,8 +390,21 @@ h1 {
     &__nav-mobile {
       align-items: center;
     }
-  }
 
+    &__banner {
+      &-button1 {
+        &:hover {
+          background-color: #c7133e;
+        }
+      }
+
+      &-button2 {
+        &:hover {
+          background-color: #ecebeb;
+        }
+      }
+    }
+  }
   .menu {
     &__list {
       list-style: none;
@@ -418,5 +431,9 @@ h1 {
         }
       }
     }
+  }
+
+  nav .mobile-menu__button:hover {
+    background: #ecebeb;
   }
 }
