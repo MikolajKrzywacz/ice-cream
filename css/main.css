@@ -235,7 +235,9 @@ h1 {
 @media screen and (min-width: 480px) {
   .header {
     position: relative;
-    border: 1px solid green;
+  }
+  .header__burger {
+    margin-right: 30px;
   }
   .header__counter-container {
     display: flex;
@@ -336,6 +338,41 @@ h1 {
     height: auto;
     bottom: 0;
     right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__burger {
+    display: none;
+    visibility: 0;
+    pointer-events: none;
+  }
+  .header nav .mobile-menu__button {
+    margin-right: 115px;
+  }
+  .header__nav-mobile {
+    align-items: center;
+  }
+  .menu__list {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+  }
+  .menu__item {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu__item > a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .menu__item > a:hover {
+    color: #d41443;
   }
 }
 .container {

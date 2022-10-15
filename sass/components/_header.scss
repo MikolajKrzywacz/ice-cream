@@ -225,9 +225,11 @@ h1 {
 @media screen and (min-width: 480px) {
   .header {
     position: relative;
-    border: 1px solid green;
 
-  
+    &__burger {
+      margin-right: 30px;
+    }
+
     &__counter-container {
       display: flex;
       flex-direction: column;
@@ -339,5 +341,51 @@ h1 {
     height: auto;
     bottom: 0;
     right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__burger {
+      display: none;
+      visibility: 0;
+      pointer-events: none;
+    }
+
+    nav .mobile-menu__button {
+      margin-right: 115px;
+    }
+
+    &__nav-mobile {
+      align-items: center;
+    }
+  }
+
+  .menu {
+    &__list {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    &__item {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &> a{
+        text-decoration: none;
+        color: #ffffff;
+        
+        &:hover {
+          color: #d41443;
+      }
+      }
+    }
   }
 }

@@ -25,12 +25,28 @@
           <img src="./images/menu-logo.png" alt="page logo" />
         </picture>
       </div>
-      <button type="button" class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobilemenu"><svg
-          height="12px" width="20px">
-          <use href="./images/icons.svg#icon-burger"></use>
-        </svg>
-      </button>
-      
+      <div class="header__desktop-menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Home</a></li>
+          <li class="menu__item"><a href="#">About us</a></li>
+          <li class="menu__item"><a href="#">How it's made?</a></li>
+          <li class="menu__item"><a href="#">Our products</a></li>
+          <li class="menu__item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <button type="button" class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobilemenu"><svg
+            height="12px" width="20px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <button type="button" class="mobile-menu__button">
+          <div class="mobile-menu__button--gap">Buy now<svg height="8px" width="5px">
+              <use href="/images/icons.svg#icon-mobile-button"></use>
+            </svg></div>
+        </button>
+      </div>
+
     </nav>
     <div class="header__banner">
       <div class="header__banner-background">
